@@ -1,0 +1,115 @@
+/*Start with the background color*/
+
+*{
+	background-color: paleturquoise;
+}
+
+/*This capitalizes the first letter of each word*/
+
+h1{
+	text-transform: capitalize;
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
+.flex > div{
+	padding: 25px;
+}
+
+
+/* This changes the caption of the first picture to italic*/
+
+figcaption{
+	font-style: italic;
+	text-align: center;
+
+}
+
+/* Mobible base style*/
+
+*{
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-size: 16px;
+	font-family: arial, serif;
+}
+
+body{
+	background-color: paleturquoise;
+	margin: 20px;
+}
+
+/* To make the image an icon you have to use the dot. We are transforming the image to a block in order to edit it better.*/
+
+img.icon {
+	display: block;
+	width: 100%;
+}
+/*Centralize the image*/
+.images{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	align-items: center;
+
+}
+
+/*Let's work with the flex now*/
+.flex{
+	background-color: lightseagreen;
+	padding: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: paleturquoise;
+
+}
+
+figure{
+	background-color: sandybrown;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 50px;
+}
+
+figcaption{
+	margin: 0;
+	font-size: 0.9rem;
+	color: 000000;
+}
+
+/* The desktop style*/
+
+@media(min-width:  780px){
+	/* To place the icons one near the other instead of one below the other*/
+
+.flex{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.flex > div{
+	flex-basis: 30%;
+	background-color: paleturquoise;
+}
+}
